@@ -1,0 +1,33 @@
+{
+  "name": "learn-js",
+  "version": "1.0.0",
+  "description": "A collection of javascript algorithms, structures and practical problems",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./*"
+  },
+  "author": "Alexander Juarez (https://www.linkedin.com/in/alexander-juarez/)",
+  "keywords": [
+    "computer-science",
+    "cs",
+    "interview",
+    "data-structure",
+    "javascript",
+    "javascript-algorithms",
+    "graph",
+    "tree"
+  ],
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.4.1"
+  }
+}

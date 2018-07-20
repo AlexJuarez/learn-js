@@ -1,0 +1,18 @@
+{
+  "root": true,
+  "extends": "airbnb",
+  "plugins": ["jest"],
+  "env": {
+    "jest/globals": true
+  },
+  "rules": {
+    "no-bitwise": "off",
+    "no-lonely-if": "off",
+    "class-methods-use-this": "off",
+    "arrow-body-style": "off",
+    "no-loop-func": "off",
+    "no-plusplus": "off",
+    "no-cond-assign": "off",
+    "no-unused-vars": "off"
+  }
+}
