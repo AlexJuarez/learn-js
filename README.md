@@ -2,14 +2,16 @@
 
 This is a compliation of data structures, algorithms and practical problems that are sure to turn you into a javascript wunderkind.
 
+This is a work in progress, folders with a README have been completed.
+
 ## Data Structures
 
 ### Beginner
 
-- Linked List
-- Queue
-- Stack
-- Hash Table (Also known as a Map, Dictionary or Key Value lookup)
+- [Linked List](data-structures/linked-list)
+- [Queue](data-structures/queue)
+- [Stack](data-structures/stack)
+- [Hash Table](data-structures/hash-table)
 - Heap
 - Priority Queue
 
