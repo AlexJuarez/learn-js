@@ -151,9 +151,10 @@ export default class MyLinkedList extends LinkedList {
     const nodes = [];
 
     let node = this.head;
-    do {
+    while (node) {
       nodes.push(node.value);
-    } while (node = node.next);
+      node = node.next;
+    }
 
     return nodes;
   }
