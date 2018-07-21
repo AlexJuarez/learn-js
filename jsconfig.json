@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "checkJs": true,
+    "checkJs": false,
     "allowSyntheticDefaultImports": false,
     "baseUrl": ".",
     "module": "commonjs",

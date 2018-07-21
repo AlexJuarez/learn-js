@@ -16,11 +16,14 @@ export default class MyLinkedList extends LinkedList {
     this.head = null;
     this.tail = null;
 
+    // bind these functions so that they can take multiple values
     this.prepend = spread(this.prepend.bind(this));
     this.append = spread(this.append.bind(this));
     this.remove = spread(this.remove.bind(this));
   }
 
+  // this pattern exposes .length as a read only
+  // similar to how .length works for other javascript objects
   get length() {
     return this.size;
   }
@@ -61,10 +64,6 @@ export default class MyLinkedList extends LinkedList {
   }
 
   remove(val) {
-    if (this.size === 0) {
-      return;
-    }
-
     const node = this.find(val);
 
     if (node == null) {
