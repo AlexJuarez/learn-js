@@ -1,5 +1,5 @@
 import LinkedList from '../linked-list';
-import { Queue } from ':data-structures/queue/interfaces';
+import Queue from ':data-structures/queue/interfaces';
 
 export default class MyQueue extends Queue {
   constructor() {

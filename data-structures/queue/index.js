@@ -1,4 +1,4 @@
-import { Queue } from './interfaces';
+import Queue from './interfaces';
 
 export default class MyQueue extends Queue {
 
