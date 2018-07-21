@@ -9,7 +9,7 @@ You are going to implement a linked list in `./index.js` that extends `LinkedLis
 | `prepend(...vals)` | Prepend each value to the front of the list |
 | `append(...vals)` | Append each value to the end of the list |
 | `remove(...vals)` | Remove each value from the list |
-| `find(val: value | function)` | Return a ListNode for the found value, or else return null. If value is a function return the first node where `val(node.value) === true` |
+| `find(val: value \| function)` | Return a ListNode for the found value, or else return null. If value is a function return the first node where `val(node.value) === true` |
 | `pop()` | Remove and return the tail of the list |
 | `shift()` | Remove and return the head of the list |
 | `toArray()` | return an array of the values in the list, order perserved |
