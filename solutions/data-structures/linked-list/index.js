@@ -1,4 +1,4 @@
-import { LinkedList, ListNode, Comparator } from './interfaces';
+import { LinkedList, ListNode, Comparator } from ':data-structures/linked-list/interfaces';
 
 const spread = (fn) => {
   return (...vals) => {
@@ -8,7 +8,7 @@ const spread = (fn) => {
 
 export default class MyLinkedList extends LinkedList {
   constructor(compare) {
-    super(compare);
+    super();
 
     this.compare = new Comparator(compare);
 
@@ -99,8 +99,8 @@ export default class MyLinkedList extends LinkedList {
     let currentNode = this.head;
 
     while (currentNode) {
-      if (typeof val === 'function' && val(currentNode.value) ||
-        this.compare.isEqual(currentNode.value, val)
+      if ((typeof val === 'function' && val(currentNode.value))
+        || this.compare.isEqual(currentNode.value, val)
       ) {
         return currentNode;
       }
@@ -126,7 +126,7 @@ export default class MyLinkedList extends LinkedList {
       this.head = null;
     }
 
-    return node != null && node.value;
+    return node;
   }
 
   shift() {
@@ -144,7 +144,7 @@ export default class MyLinkedList extends LinkedList {
       this.tail = null;
     }
 
-    return node != null && node.value;
+    return node;
   }
 
   toArray() {
