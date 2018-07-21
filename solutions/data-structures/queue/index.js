@@ -5,6 +5,8 @@ export default class MyQueue extends Queue {
   constructor() {
     super();
 
+    // our implementation of linked list makes
+    // creating this queue trival.
     this.list = new LinkedList();
   }
 
@@ -16,6 +18,7 @@ export default class MyQueue extends Queue {
     return this.list.length === 0;
   }
 
+  // Returns the first value in the queue
   peek() {
     if (this.isEmpty()) {
       return null;
@@ -24,10 +27,12 @@ export default class MyQueue extends Queue {
     return this.list.head.value;
   }
 
+  // Adds these values to the end of the queue
   enqueue(...vals) {
     this.list.append(...vals);
   }
 
+  // returns and removes the frist value
   dequeue() {
     if (this.isEmpty()) {
       return null;
