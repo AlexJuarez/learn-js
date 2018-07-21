@@ -15,9 +15,6 @@ This is a compliation of data structures, algorithms and practical problems that
 
 > This is a work in progress, folders with a README have been completed.
 
-
-
-
 ## Data Structures
 
 ### Beginner

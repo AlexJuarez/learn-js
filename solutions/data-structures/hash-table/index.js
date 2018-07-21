@@ -81,6 +81,10 @@ export default class MyHashTable extends HashTable {
       .reduce((arr, bucket) => arr.concat(bucket.toArray().map(e => e.key)), []);
   }
 
+  getMaxSize() {
+    return this.buckets.length;
+  }
+
   size() {
     return this.count;
   }

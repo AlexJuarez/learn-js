@@ -14,12 +14,14 @@ Hash collision resolution by chaining bucket entries.
 
 | Method | Description |
 | --- | --- |
+| `constructor(hashTableSize: number)` | initialize the hash table |
 | `hash(key: string)` | return a number that will return an even distribution for 0 - number of buckets |
 | `set(key: string, value: any)` | put value into location `hash(key)` |
 | `delete(key: string)` | remove value from hash table |
 | `get(key: string)` | return the value stored, or `undefined` |
 | `has(key: string)` | return true if the table has the key, false otherwise |
 | `getKeys()` | return an array containing all keys in the table |
+| `getMaxSize()` | return the number of buckets |
 | `size()` | return the number of elements currently in the table |
 | `[Symbol.iterator]()` | return all of the values of the hash table |
 

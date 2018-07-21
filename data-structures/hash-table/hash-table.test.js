@@ -15,7 +15,7 @@ describe('HashTable', () => {
     strs.forEach((str) => {
       const hash = hashTable.hash(str);
 
-      expect(hash).toBeLessThan(hashTable.buckets.length);
+      expect(hash).toBeLessThan(hashTable.getMaxSize());
       expect(hash).toBeGreaterThanOrEqual(0);
     });
   });

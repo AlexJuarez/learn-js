@@ -23,6 +23,10 @@ export default class HashTable {
     throw new Error('Method not implemented');
   }
 
+  getMaxSize() {
+    throw new Error('Method not implemented');
+  }
+
   size() {
     throw new Error('Method not implemented');
   }
