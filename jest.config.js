@@ -18,5 +18,5 @@ module.exports = {
   coveragePathIgnorePatterns: ['<rootDir>/node_modules/'],
 
   // Test file pattern
-  testRegex: '\\.test\\.(js|jsx)?$',
-}
+  testRegex: `(${process.cwd()}.*)\\.test\\.(js|jsx)?$`,
+};

@@ -1,3 +1,14 @@
 {
-  "presets": ["env"]
+  "presets": ["env"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./"],
+      "cwd": "packagejson",
+      "alias": {
+        ":data-structures": "./data-structures",
+        ":algorithms": "./algorithms",
+        ":solutions": "./solutions"
+      }
+    }]
+  ]
 }

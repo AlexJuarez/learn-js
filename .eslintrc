@@ -13,6 +13,12 @@
     "no-loop-func": "off",
     "no-plusplus": "off",
     "no-cond-assign": "off",
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "import/prefer-default-export": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
   }
 }

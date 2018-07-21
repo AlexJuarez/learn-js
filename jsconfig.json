@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "checkJs": false,
+    "checkJs": true,
     "allowSyntheticDefaultImports": false,
+    "baseUrl": ".",
+    "module": "commonjs",
+    "paths": {
+      ":data-structures/*": ["data-structures/*"],
+      ":algorithms/*": ["algorithms/*"],
+      ":solutions/*": ["solutions/*"],
+    }
   },
   "include": [ "**/*" ],
   "exclude": [
     "node_modules",
-  ]
+  ],
 }
