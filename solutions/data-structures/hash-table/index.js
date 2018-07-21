@@ -7,10 +7,9 @@ export default class MyHashTable extends HashTable {
   constructor(hashTableSize = DEFAULT_SIZE) {
     super();
 
+    // create a count variable to track the size
     this.count = 0;
-    this.buckets = Array(hashTableSize).fill(null).map(
-      () => new LinkedList(),
-    );
+    this.buckets = new Array(hashTableSize);
   }
 
   // There are several other ways to hash
@@ -28,6 +27,12 @@ export default class MyHashTable extends HashTable {
 
   getBucket(key) {
     const hash = this.hash(key);
+
+    // if the bucket is empty
+    // initalize a linked list
+    if (this.buckets[hash] == null) {
+      this.buckets[hash] = new LinkedList();
+    }
 
     return this.buckets[hash];
   }
