@@ -5,6 +5,8 @@ export default class MyStack extends Stack {
   constructor() {
     super();
 
+    // Our implementation of linked list makes
+    // implementing stack trival
     this.list = new LinkedList();
   }
 
@@ -16,6 +18,7 @@ export default class MyStack extends Stack {
     return this.list.length === 0;
   }
 
+  // look at the last item in the list
   peek() {
     if (this.isEmpty()) {
       return null;
@@ -24,10 +27,12 @@ export default class MyStack extends Stack {
     return this.list.tail.value;
   }
 
+  // push values on to the stack
   push(...vals) {
     this.list.append(...vals);
   }
 
+  // return and remove the last value in the list
   pop() {
     if (this.isEmpty()) {
       return null;
