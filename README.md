@@ -2,7 +2,21 @@
 
 This is a compliation of data structures, algorithms and practical problems that are sure to turn you into a javascript wunderkind.
 
-This is a work in progress, folders with a README have been completed.
+
+## Getting started
+
+- clone this repository
+- install `node` lts (v8.9.1)
+- `npm install`
+- `npm install -g jest-cli`
+- `cd data-structures/linked-list`
+- edit `index.js`
+- run tests with `jest`
+
+> This is a work in progress, folders with a README have been completed.
+
+
+
 
 ## Data Structures
 
