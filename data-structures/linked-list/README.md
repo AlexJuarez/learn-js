@@ -4,7 +4,7 @@ You are going to implement a linked list in `./index.js` that extends `LinkedLis
 
 | Method | Description |
 | --- | --- |
-| `constructor(compare: function)` | Create the linked list with a comparison function `(a, b) => -1: a < b | 0: a === b | 1: a > b` |
+| `constructor(compare: function)` | Create the linked list with a comparison function `(a, b) => -1: a < b \| 0: a === b \| 1: a > b` |
 | `get length()` | Get the current size of the list |
 | `prepend(...vals)` | Prepend each value to the front of the list |
 | `append(...vals)` | Append each value to the end of the list |
