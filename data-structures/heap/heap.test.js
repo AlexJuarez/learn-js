@@ -52,7 +52,11 @@ describe('Heap', () => {
 
     remove();
 
-    peek(3, 2);
+    peek(2, 2);
+
+    remove();
+
+    peek(3, 1);
   });
 
   test('find', () => {
