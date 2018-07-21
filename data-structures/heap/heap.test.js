@@ -1,46 +1,78 @@
 import Heap from '.';
 
 describe('Heap', () => {
-  let heap;
+  let maxHeap;
+  let minHeap;
 
   beforeEach(() => {
-    heap = new Heap((a, b) => a - b);
+    maxHeap = new Heap((a, b) => a - b);
+    minHeap = new Heap((a, b) => b - a);
   });
 
-  test('add()', () => {
-    heap.add(1);
-    heap.add(2);
+  const add = (...items) => {
+    minHeap.add(...items);
+    maxHeap.add(...items);
+  };
 
-    expect(heap.length).toEqual(2);
-    expect(heap.peek()).toEqual(2);
+  const length = (len) => {
+    expect(minHeap.length).toEqual(len);
+    expect(maxHeap.length).toEqual(len);
+  };
+
+  const peek = (min, max) => {
+    expect(minHeap.peek()).toEqual(min);
+    expect(maxHeap.peek()).toEqual(max);
+  };
+
+  const remove = () => {
+    minHeap.remove(minHeap.peek());
+    maxHeap.remove(maxHeap.peek());
+  };
+
+  const assertEmpty = () => {
+    expect(minHeap.isEmpty()).toBeTruthy();
+    expect(maxHeap.isEmpty()).toBeTruthy();
+  };
+
+  const assertNotEmpty = () => {
+    expect(minHeap.isEmpty()).toBeFalsy();
+    expect(maxHeap.isEmpty()).toBeFalsy();
+  };
+
+  test('add()', () => {
+    add(1, 2);
+    length(2);
+    peek(1, 2);
   });
 
   test('remove', () => {
-    heap.add(1, 2, 3);
+    add(1, 2, 3);
 
-    expect(heap.peek()).toEqual(3);
-    heap.remove(heap.peek());
-    expect(heap.peek()).toEqual(2);
+    peek(1, 3);
+
+    remove();
+
+    peek(3, 2);
   });
 
   test('find', () => {
-    heap.add(3, 4, 3, 2, 2, 1);
+    add(3, 4, 3, 2, 2, 1);
 
-    expect(heap.find(3)).toEqual(1);
-    expect(heap.find(4)).toEqual(0);
+    expect(maxHeap.find(3)).toEqual(1);
+    expect(maxHeap.find(4)).toEqual(0);
   });
 
   test('isEmpty', () => {
-    expect(heap.isEmpty()).toBeTruthy();
+    assertEmpty();
 
-    heap.add(1, 2, 3);
+    add(1, 2, 3);
 
-    expect(heap.isEmpty()).toBeFalsy();
+    assertNotEmpty();
 
-    heap.remove(heap.peek());
-    heap.remove(heap.peek());
-    heap.remove(heap.peek());
+    remove();
+    remove();
+    remove();
 
-    expect(heap.isEmpty()).toBeTruthy();
+    assertEmpty();
   });
 });
