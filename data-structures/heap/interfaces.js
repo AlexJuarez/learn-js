@@ -7,11 +7,11 @@ export default class Heap {
     throw new Error('Method not implemented');
   }
 
-  remove(val) {
+  remove() {
     throw new Error('Method not implemented');
   }
 
-  find(val) {
+  peek() {
     throw new Error('Method not implemented');
   }
 
