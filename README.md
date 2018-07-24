@@ -23,7 +23,7 @@ This is a compliation of data structures, algorithms and practical problems that
 - [Queue](data-structures/queue)
 - [Stack](data-structures/stack)
 - [Hash Table](data-structures/hash-table)
-- Heap
+- [Heap](data-structures/heap)
 - Priority Queue
 
 ### Advanced
