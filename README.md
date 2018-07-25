@@ -33,11 +33,11 @@ This is a compliation of data structures, algorithms and practical problems that
   - Map
 - Functions
   - [Once](algorithms/functions/once)
+  - [Memoize](algorithms/functions/memoize)
   - Lazy
   - Flatten thunk
   - Curry
   - Debounce
-  - Memoize
   - throttle
 - Promises
   - Throttle
