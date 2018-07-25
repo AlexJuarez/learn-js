@@ -22,3 +22,11 @@ const result2 = memoizedFn(1, 2);
 // nothing should log and result = result2
 ```
 
+> Also note that the memoizedFn should be able to pass it's context to the inner function. 
+
+```javascript
+const ctx = {};
+
+memoizedFn.call(ctx, 1, 2);
+// should pass ctx to myFn as 'this'
+```
