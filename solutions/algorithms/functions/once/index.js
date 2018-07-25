@@ -1,4 +1,4 @@
-export default function once(fn) {
+module.exports = function once(fn) {
   let executed = false;
 
   return (...args) => {

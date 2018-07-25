@@ -34,13 +34,15 @@ This is a compliation of data structures, algorithms and practical problems that
 - Functions
   - [Once](algorithms/functions/once)
   - [Memoize](algorithms/functions/memoize)
+  - [Throttle](algorithms/functions/throttle)
   - Lazy
   - Flatten thunk
   - Curry
   - Debounce
-  - throttle
-- Promises
-  - Throttle
+- Uncategorized
+  - Async function execution (parallel, serial and race)
+    - via Callback
+    - via Promise
 
 ## Advanced
 

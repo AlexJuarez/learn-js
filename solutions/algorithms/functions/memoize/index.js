@@ -1,4 +1,4 @@
-export default function memoize(fn, keyFn) {
+module.exports = function memoize(fn, keyFn) {
   const cache = {};
 
   const getKey = keyFn || ((...args) => JSON.stringify(args));

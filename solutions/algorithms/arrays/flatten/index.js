@@ -15,4 +15,4 @@ function flatten(arr) {
   return output;
 }
 
-export default flatten;
+module.exports = flatten;
