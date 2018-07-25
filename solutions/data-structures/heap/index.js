@@ -63,7 +63,7 @@ export default class Heap extends HeapInterface {
     let index = this.items.length - 1;
     let parent = this.parent(index);
 
-    while (index !== parent && this.compare(parent, index) < 0) {
+    while (index < parent && this.compare(parent, index) < 0) {
       this.swap(index, parent);
       index = parent;
       parent = this.parent(index);
@@ -95,6 +95,18 @@ export default class Heap extends HeapInterface {
     }
   }
 
+  // @private
+  // find item and return index
+  find(item, compareFn = this.compareFn) {
+    for (let i = 0; i < this.items.length; i++) {
+      if (compareFn(this.items[i], item) === 0) {
+        return i;
+      }
+    }
+
+    return null;
+  }
+
   add(item) {
     this.items.push(item);
     this.bubbleUp();
@@ -104,14 +116,18 @@ export default class Heap extends HeapInterface {
     return this.items[0];
   }
 
-  remove() {
-    const val = this.peek();
-    this.swap(0, this.items.length - 1);
+  removeIndex(index = 0) {
+    const val = this.items[index];
+    this.swap(index, this.items.length - 1);
     this.items.length--;
 
-    this.bubbleDown(0);
+    this.bubbleDown(index);
 
     return val;
+  }
+
+  remove() {
+    this.removeIndex(0);
   }
 
   isEmpty() {
