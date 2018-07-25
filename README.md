@@ -24,7 +24,7 @@ This is a compliation of data structures, algorithms and practical problems that
 - [Stack](data-structures/stack)
 - [Hash Table](data-structures/hash-table)
 - [Heap](data-structures/heap)
-- Priority Queue
+- [Priority Queue](data-structures/priority-queue)
 
 ### Advanced
 
