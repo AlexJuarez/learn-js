@@ -32,7 +32,7 @@ This is a compliation of data structures, algorithms and practical problems that
   - [Flatten](algorithms/arrays/flatten)
   - Map
 - Functions
-  - Once
+  - [Once](algorithms/functions/once)
   - Lazy
   - Flatten thunk
   - Curry
