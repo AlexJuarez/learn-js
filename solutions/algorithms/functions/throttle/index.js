@@ -42,4 +42,4 @@ module.exports = function throttle(fn, interval) {
   };
 
   return throttled;
-}
+};
