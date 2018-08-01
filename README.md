@@ -37,7 +37,7 @@ This is a compliation of data structures, algorithms and practical problems that
   - [Throttle](algorithms/functions/throttle)
   - Lazy
   - Flatten thunk
-  - Curry
+  - [Curry](algorithms/functions/curry)
   - Debounce
 - Uncategorized
   - Async function execution (parallel, serial and race)
