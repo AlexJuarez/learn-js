@@ -1,13 +1,13 @@
 const curry = (fn) => {
   function curried(arr = []) {
-    return (arg) => {
-      const args = arr.concat(arg);
+    return (...args) => {
+      const a = arr.concat(args);
 
-      if (fn.length === args.length) {
-        return fn.apply(this, args);
+      if (fn.length === a.length) {
+        return fn.apply(this, a);
       }
 
-      return curried(args);
+      return curried(a);
     };
   }
 

@@ -1,25 +1,46 @@
 import curry from '.';
 
-const myFn = (a, b, c) => {
-  return `${a}:${b}:${c}`;
-};
-
 describe('curry', () => {
-  let fn;
-  let curried;
+  it('curries the fn at least once', () => {
+    const add = curry((a, b) => a + b);
 
-  beforeEach(() => {
-    fn = jest.fn(myFn);
-    curried = curry(fn);
+    expect(add(1)(2)).toEqual(3);
   });
 
-  it('should collect arguments', () => {
-    const a = curried('test');
-    const b = a('test2');
-    const c = b('test3');
-    const c2 = b('test4');
+  it('curries the function with a single argument', () => {
+    const output = curry(n => n);
 
-    expect(c).toEqual('test:test2:test3');
-    expect(c2).toEqual('test:test2:test4');
+    expect(output(1)).toEqual(1);
+  });
+
+  it('curries the function even if multiple args are given', () => {
+    const add = curry((a, b, c) => a + b + c);
+
+    expect(add(1, 2)(3)).toEqual(add(1)(2)(3));
+  });
+
+  it('doesn\'t share state between calls', () => {
+    const add = curry((a, b, c) => a + b + c);
+
+    expect(add(1)(2)(3)).toEqual(6);
+    expect(add(2)(3)(4)).toEqual(9);
+  });
+
+  it('works with other types of functions', () => {
+    const merge = curry((a, b, c) => [a, b, c].join(', '));
+
+    expect(merge('1')(2)(3)).toEqual('1, 2, 3');
+  });
+
+  it('doesn\'t share inner state', () => {
+    const add = curry((a, b, c, d) => a + b + c + d);
+    
+    const lastTwo = add(1)(2);
+
+    expect(lastTwo(3)(4)).toEqual(10);
+
+    const lastOne = lastTwo(5);
+
+    expect(lastOne(6)).toEqual(14);
   });
 });
