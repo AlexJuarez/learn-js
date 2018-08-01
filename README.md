@@ -30,16 +30,13 @@ This is a compliation of data structures, algorithms and practical problems that
 
 - Arrays
   - [Flatten](algorithms/arrays/flatten)
-  - Map
 - Functions
   - [Once](algorithms/functions/once)
   - [Memoize](algorithms/functions/memoize)
   - [Throttle](algorithms/functions/throttle)
-  - Lazy
-  - Flatten thunk
   - [Curry](algorithms/functions/curry)
   - [Debounce](algorithms/functions/debounce)
-- Uncategorized
+- Misc
   - Async function execution (parallel, serial and race)
     - via Callback
     - via Promise
@@ -115,6 +112,7 @@ This is a compliation of data structures, algorithms and practical problems that
   - Is Power of Two - check if the number is a power of two
   - Pascal's Triangle
 - Uncategorized
+  - Flatten thunk
   - Middleware
   - Async function execution (parallel, serial and race)
     - via Callback
