@@ -36,10 +36,7 @@ This is a compliation of data structures, algorithms and practical problems that
   - [Throttle](algorithms/functions/throttle)
   - [Curry](algorithms/functions/curry)
   - [Debounce](algorithms/functions/debounce)
-- Misc
-  - Async function execution (parallel, serial and race)
-    - via Callback
-    - via Promise
+  - [Async](algorithms/functions/async)
 
 ## Advanced
 
