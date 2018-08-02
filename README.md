@@ -58,16 +58,7 @@ This is a compliation of data structures, algorithms and practical problems that
 ### Beginner
 
 - Arrays
-  - Flatten
   - Map
-- Functions
-  - Once
-  - Lazy
-  - Flatten thunk
-  - Curry
-  - Debounce
-  - Memoize
-  - throttle
 - Promises
   - Throttle
 - Immutable
