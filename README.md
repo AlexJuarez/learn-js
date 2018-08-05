@@ -49,7 +49,7 @@ This is a compliation of data structures, algorithms and practical problems that
   - Red-Black Tree
   - Segment Tree (interval tree)
   - Fenwick Tree
-- Graph
+- [Graph](data-structures/graph)
 - Disjoint Set
 - Bloom Filter
 

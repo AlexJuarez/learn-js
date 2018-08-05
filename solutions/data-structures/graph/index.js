@@ -1,4 +1,4 @@
-import { Graph as GraphI } from ':data-structures/graph/interfaces';
+import GraphI from ':data-structures/graph/interfaces';
 
 export default class Graph extends GraphI {
   constructor() {
