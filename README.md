@@ -37,6 +37,7 @@ This is a compliation of data structures, algorithms and practical problems that
   - [Curry](algorithms/functions/curry)
   - [Debounce](algorithms/functions/debounce)
   - [Async](algorithms/functions/async)
+  - [Trampoline](algoritms/functions/trampoline)
 
 ## Advanced
 
