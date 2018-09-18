@@ -1,6 +1,6 @@
 # Learn JS 
 
-This is a compliation of data structures, algorithms and practical problems that are sure to turn you into a javascript wunderkind.
+This is a compilation of data structures, algorithms and practical problems that are sure to turn you into a javascript wunderkind.
 
 
 ## Getting started
