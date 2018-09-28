@@ -43,7 +43,7 @@ This is a compilation of data structures, algorithms and practical problems that
 
 ### Data Structures
 
-- Trie (Used in string comprehension) variants include Prefix Trie & Suffix Trie
+- [Trie](data-structures/trie) (Used in string comprehension) variants include Prefix Trie & Suffix Trie
 - Tree
   - Binary Search Tree
   - AVL Tree
