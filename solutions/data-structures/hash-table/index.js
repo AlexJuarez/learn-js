@@ -19,7 +19,7 @@ export default class MyHashTable extends HashTable {
       .from(key)
       .map(s => s.charCodeAt(0))
       .reduce(
-        (accumlator, charCode) => (accumlator + charCode),
+        (accumulator, charCode) => (accumulator + charCode),
       );
 
     return hash % this.buckets.length;
@@ -82,7 +82,7 @@ export default class MyHashTable extends HashTable {
   }
 
   getMaxSize() {
-    return this.buckets.length;
+    return Number.from(this.buckets.length);
   }
 
   size() {

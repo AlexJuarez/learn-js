@@ -1,18 +1,20 @@
 {
+  "plugins": ["airbnb-base"],
+  "parser": "eslint-babel",
   "compilerOptions": {
-    "target": "es2015",
+    "target": "esnext",
     "checkJs": false,
-    "allowSyntheticDefaultImports": false,
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "module": "commonjs",
     "paths": {
       ":data-structures/*": ["data-structures/*"],
       ":algorithms/*": ["algorithms/*"],
-      ":solutions/*": ["solutions/*"],
+      ":solutions/*": ["solutions/*"]
     }
   },
-  "include": [ "**/*" ],
+  "include": [ ".ts", ".js" ],
   "exclude": [
-    "node_modules",
-  ],
+    "node_modules"
+  ]
 }

@@ -1,9 +1,11 @@
 import HeapInterface from ':data-structures/heap/interfaces';
 
-const spread = fn => (...items) => {
-  [...items].forEach((i) => {
-    fn(i);
-  });
+const spread = (fn) => {
+  return (...items) => {
+    [...items].forEach((i) => {
+      fn(i);
+    });
+  };
 };
 
 export default class Heap extends HeapInterface {
@@ -19,7 +21,7 @@ export default class Heap extends HeapInterface {
   }
 
   get length() {
-    return this.items.length;
+    return Number.from(this.items.length);
   }
 
   // @private
@@ -113,6 +115,11 @@ export default class Heap extends HeapInterface {
   }
 
   peek() {
+
+    if (!this.length) {
+      return null;
+    }
+
     return this.items[0];
   }
 

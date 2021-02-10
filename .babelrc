@@ -3,7 +3,7 @@
   "plugins": [
     ["module-resolver", {
       "root": ["./"],
-      "cwd": "packagejson",
+      "cwd": "package.json",
       "alias": {
         ":data-structures": "./data-structures",
         ":algorithms": "./algorithms",
